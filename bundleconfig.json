@@ -21,7 +21,6 @@
       "inputFiles": [
         "wwwroot/_lib/jquery/jquery.js",
         "wwwroot/_lib/font-awesome/js/all.js",
-        "wwwroot/_lib/bootstrap/js/bootstrap.bundle.js",
         "wwwroot/_lib/mark.js/mark.js",
         "wwwroot/_lib/wordcloud2.js/wordcloud2.js",
         "wwwroot/js/site.js"
@@ -35,7 +34,6 @@
       "inputFiles": [
         "wwwroot/_lib/jquery/jquery.js",
         "wwwroot/_lib/font-awesome/js/all.js",
-        "wwwroot/_lib/bootstrap/js/bootstrap.bundle.js",
         "wwwroot/_lib/mark.js/mark.js",
         "wwwroot/_lib/wordcloud2.js/wordcloud2.js",
         "wwwroot/js/site.js"

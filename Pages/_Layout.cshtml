@@ -9,16 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="~/" />
 
-    <link rel="stylesheet" href="_lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="_lib/bootstrap/css/bootstrap.min.css" asp-append-version="true" />
 
     <environment include="Test,Staging,Production">
-       <link href="library.bundle.min.css" rel="stylesheet" />
+       <link href="library.bundle.min.css" rel="stylesheet" asp-append-version="true" />
     </environment>
     <environment exclude="Test,Staging,Production">
-        <link href="library.bundle.css" rel="stylesheet" />
+        <link href="library.bundle.css" rel="stylesheet" asp-append-version="true" />
     </environment>
     
-    <link href="scss-hot-reload-workflow.styles.css" rel="stylesheet" />
+    <link href="scss-hot-reload-workflow.styles.css" rel="stylesheet" asp-append-version="true" />
     <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
 </head>
 <body>
@@ -36,12 +36,12 @@
     </div>
 
     <script src="_framework/blazor.server.js"></script>
-
+    <script src="_lib/bootstrap/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
     <environment include="Test,Staging,Production">
-        <script src="library.bundle.min.js"></script>
+        <script src="library.bundle.min.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Test,Staging,Production">
-        <script src="library.bundle.js"></script>
+        <script src="library.bundle.js" asp-append-version="true"></script>
     </environment>
 </body>
 </html>
