@@ -1,0 +1,44 @@
+[
+    {
+      "outputFileName": "wwwroot/library.bundle.css",
+      "inputFiles": [
+        "wwwroot/_lib/flag-icon-css/css/flag-icons.css",
+        "wwwroot/css/site.css"
+      ],
+      "minify": {
+        "enabled": false
+      }
+    },
+    {
+      "outputFileName": "wwwroot/library.bundle.min.css",
+      "inputFiles": [
+        "wwwroot/_lib/flag-icon-css/css/flag-icons.css",
+        "wwwroot/css/site.css"
+      ]
+    },
+    {
+      "outputFileName": "wwwroot/library.bundle.js",
+      "inputFiles": [
+        "wwwroot/_lib/jquery/jquery.js",
+        "wwwroot/_lib/font-awesome/js/all.js",
+        "wwwroot/_lib/bootstrap/js/bootstrap.bundle.js",
+        "wwwroot/_lib/mark.js/mark.js",
+        "wwwroot/_lib/wordcloud2.js/wordcloud2.js",
+        "wwwroot/js/site.js"
+      ],
+      "minify": {
+        "enabled": false
+      }
+    },
+    {
+      "outputFileName": "wwwroot/library.bundle.min.js",
+      "inputFiles": [
+        "wwwroot/_lib/jquery/jquery.js",
+        "wwwroot/_lib/font-awesome/js/all.js",
+        "wwwroot/_lib/bootstrap/js/bootstrap.bundle.js",
+        "wwwroot/_lib/mark.js/mark.js",
+        "wwwroot/_lib/wordcloud2.js/wordcloud2.js",
+        "wwwroot/js/site.js"
+      ]
+    }
+  ]
