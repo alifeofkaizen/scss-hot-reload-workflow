@@ -5,10 +5,20 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>scss_hot_reload_workflow</RootNamespace>
+    <GenerateStaticAssets Condition="'$(GenerateStaticAssets)' == ''">True</GenerateStaticAssets>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
   </ItemGroup>
+
+  <ItemGroup>
+    <!--specify file extensions here as needed-->
+    <Watch Include="**\*.44scss" />
+  </ItemGroup>
+
+  <Target Name="CompileStaticAssets" AfterTargets="BeforeBuild" Condition="'$(GenerateStaticAssets)' == 'True'">
+      <Exec Command="webcompiler -c webcompilerconfiguration.json -r ." StandardOutputImportance="high" />
+  </Target>  
 
 </Project>
